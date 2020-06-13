@@ -9,7 +9,6 @@ dockerpath=davictor/ml-microservice
 # Step 2
 # Run the Docker Hub container with kubernetes
 kubectl run ml-microservice-pod\
-    --generator=run-pod/v1\
     --image=$dockerpath\
     --port=80 --labels app=ml-microservice-pod
 
